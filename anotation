@@ -1,0 +1,36 @@
+#criar controller
+php artisan make:controller EventController
+
+#Cria migration
+php artisan make:migration create_products_table
+
+#checa migrations
+php artisan migrate:status
+
+#roda as migration novamente
+php artisan make:fresh
+
+#Adicionar coluna na tabela
+php artisan make:migration add_category_to_products_table
+
+#Desfaz a ultima migration executada
+php artisan migrate:rollback
+
+#Da um rollback de todas as migrations realizadas
+php artisan migration:reset
+
+#Faz um rollback e executa todas as migrations novamente
+php artisan migration:refresh
+
+#Cria um model
+php artisan make:model Event
+
+#Criando autenticação
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+npm install
+npm run dev
+php artisan migrate
+
+
+
